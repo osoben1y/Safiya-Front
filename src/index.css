@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* iOS-like backdrop effectni kuchaytirish uchun */
+.backdrop-blur-xl {
+  backdrop-filter: blur(30px) saturate(180%);
+  -webkit-backdrop-filter: blur(30px) saturate(180%);
+}
+
+/* Sof, Apple’ga o‘xshash font hisobi uchun */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
