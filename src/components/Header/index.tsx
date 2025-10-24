@@ -36,6 +36,30 @@ const Header = () => {
           >
             Login
           </NavLink>
+
+          <NavLink
+            to="/events"
+            className={({ isActive }) =>
+              `text-white/80 hover:text-white transition relative 
+               after:absolute after:-bottom-1 after:left-0 after:w-0 
+               after:h-[2px] after:bg-white after:transition-all 
+               hover:after:w-full ${isActive ? 'text-white after:w-full' : ''}`
+            }
+          >
+            Events
+          </NavLink>
+
+          <NavLink
+            to="/not-found"
+            className={({ isActive }) =>
+              `text-white/80 hover:text-white transition relative 
+               after:absolute after:-bottom-1 after:left-0 after:w-0 
+               after:h-[2px] after:bg-white after:transition-all 
+               hover:after:w-full ${isActive ? 'text-white after:w-full' : ''}`
+            }
+          >
+            Not Found
+          </NavLink>
         </nav>
       </div>
     </header>

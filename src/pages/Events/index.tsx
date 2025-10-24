@@ -1,10 +1,11 @@
-import { memo } from "react";
-import { useEvent } from "../../hooks/useEvent";
-import EventView from "../../components/Event-view";
+import { memo } from 'react';
+import { useEvent } from '../../hooks/useEvent';
+import EventView from '../../components/Event-view';
 
-const Home: React.FC = () => {
+const Events = () => {
   const { getEvents } = useEvent()
   const { data, isLoading, error } = getEvents
+
   if (isLoading) {
     return <div className="Events">Loading...</div>
   }
@@ -12,6 +13,7 @@ const Home: React.FC = () => {
   if (error) {
     return <div className="Events">Error loading events</div>
   }
+
   return (
     <div className="Events">
       <EventView data={data || []} />
@@ -19,4 +21,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default memo(Home);
+export default memo(Events);

@@ -24,3 +24,11 @@ export interface ILogin {
     email: string;
     password: string;
 }
+
+export interface IEvent {
+    id: string,
+    event_name: string,
+    number_of_guests: number,
+    number_of_waiters: number,
+    date: string
+}

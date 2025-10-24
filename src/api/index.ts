@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "https://observant-stillness-production-ba62.up.railway.app/",
+  baseURL: "http://localhost:3000/",
 });
 
 api.interceptors.request.use((config) => {
